@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# 🚗 Car Rental System – React Final Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📄 Overview
 
-## Available Scripts
+This is a **React-based full-stack web application** for managing a complete car rental system, including **user and admin interfaces**, vehicle management, booking and return functionality, and advanced data filtering. This project is designed as a final project for a web development course, demonstrating skills in `React`, `Redux`, `React Router`, component composition, and modern JavaScript best practices.
 
-In the project directory, you can run:
+### Transactions
+- `Rentals`: RentalID, UserID, VehicleID, Date, Time
+- `Returns`: ReturnID, RentalID, Return Date, Return Time, Remaining Fuel, Total Payment, Paid (Boolean)
 
-### `npm start`
+## 🧭 Functional 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🧍 User Interface (Client)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### 1. **Authentication**
+- User registration with form validation.
+- Login with ID, phone, and password.
+- If not registered → redirect to registration.
 
-### `npm test`
+#### 2. **Main Interface**
+- Homepage with promotional content and images.
+- After login → navigate to vehicle listing and show user name or icon in the menu.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 3. **Vehicle Listing**
+- Display all available vehicles.
+  - City
+- Display availability: ✅ Green (available), ❌ Red (unavailable).
 
-### `npm run build`
+#### 4. **Vehicle Details**
+- Click on a vehicle (only when logged in) to view:
+  - Full specs
+  - Rent button (enabled if available)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 5. **Renting a Vehicle**
+- On "Rent" button:
+  - Submit rental request → save to system
+  - Update vehicle status to unavailable
+  - Return rental code to user
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 6. **Returning a Vehicle**
+- Enter Rental Code
+- Fill current city, street, and fuel remaining
+- Pricing:
+  - Calculate hours * price per hour
+  - Adjust cost if fuel is less than before (according to price per liter)
+- Update vehicle status to available
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Admin Interface
 
-### `npm run eject`
+Accessible only to users with admin privileges:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### 1. **Authentication**
+- Login as admin → access management interface
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### 2. **Admin Functionalities**
+- View and update engine types and fuel pricing
+- View, add and filter vehicle models by company or type
+- Add, update, or delete vehicles
+- View all rentals, including:
+  - Whether returned or not
+  - Show return details if available
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🖼️ UI / UX Guidelines
 
-## Learn More
+- Clean and modern design using CSS or component libraries (if applicable)
+- Clear layout with component separation
+- Logical and intuitive navigation
+- Visual feedback (loading, errors, confirmations)
+- Fully responsive layout (mobile/tablet/desktop)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ⚙️ Project Structure (Suggested)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+src/
+│
+├── components/         # Reusable UI components
+├── pages/              # Page components (Home, Login, Register, Vehicles)
+├── services/           # API and logic services
+├── redux/              # Redux slices & store
+├── utils/              # Helper functions
+├── assets/             # Images & static files
+└── App.js              # Main app component
+```
 
-### Code Splitting
+## 🔄 Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Integration with a backend (Node.js, Firebase, etc.)
+- Full payment gateway support
+- Enhanced security (token-based authentication)
+- Multi-language support
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ✨ Good luck and enjoy coding!
