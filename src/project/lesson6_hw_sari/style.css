@@ -1,0 +1,24 @@
+.div {
+    border: solid 5px palevioletred;
+    width: 50vw;
+    height: 50vw;
+    text-align: center;
+}
+
+
+.img {
+    width: auto;
+    height: 30vh;
+}
+
+.bless{
+    font-size: xx-large;
+    font-family: Fb Begale;
+    color: palevioletred;
+}
+
+.title{
+    font-size: 65px;
+    color: lightskyblue;
+    font-family: Fb Technology;
+}

@@ -1,0 +1,33 @@
+.wishAll {
+    background-color: #ffffff;
+    width: 45vw;
+    height: 30vw;
+    flex-direction: column;
+    margin: 18px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    text-align: center;
+    margin-left: 25vw;
+
+}
+
+div {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+}
+
+body {
+    align-items: center;
+    text-align: center;
+    background-color: rgb(247, 233, 206);
+
+}
+
+input {
+    text-align: center;
+    color: #ffffff;
+    background-color: rgb(253, 186, 155);
+}

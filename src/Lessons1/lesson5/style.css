@@ -1,0 +1,21 @@
+.div {
+    border: double hotpink 8px;
+    background-color: pink;
+    font-size: 3rem;
+    width: 30vw;
+    height: auto;
+}
+
+.big {
+    color: red;
+    font-size: 20px;
+}
+
+.small {
+    color: black;
+    font-size: 15px;
+}
+
+.message {
+    background-color: blanchedalmond;
+}

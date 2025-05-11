@@ -1,0 +1,86 @@
+.error {
+    color: red;
+}
+
+.nav {
+    width: 100vw;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    background-color: black;
+    justify-content: center;
+}
+
+.link {
+    color: white;
+    font-size: 1rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.active {
+    color: rgb(27, 157, 131);
+}
+
+.product {
+    border: double 5px red;
+    width: 10vw;
+    height: 10vw;
+}
+
+.username {
+    color: white;
+    font-size: 1rem;
+    float: left;
+    margin-left: 10vw;
+}
+
+.big {
+    color: rgb(213, 164, 137);
+    font-size: 40px;
+    font-family: Bradley Hand ITC;
+}
+
+.p {
+    color: rgb(16, 93, 92);
+    font-size: 50px;
+    font-family: Fb DanaKama;
+}
+
+.small {
+    color: rgb(255, 0, 119);
+    font-size: 60px;
+    font-family: Fb DanaKama;
+}
+
+.cotarot {
+    color: rgb(69, 93, 101);
+    font-size: 60px;
+    font-family: Fb DanaKama;
+}
+
+.lbl {
+
+    font-size: 40px;
+    font-family: Bradley Hand ITC;
+}
+
+.input {
+    border-radius: 0cqmax;
+}
+
+.green {
+    color: rgb(102, 12, 12);
+    background-color: chartreuse;
+    font-family: Fb DanaKama;
+    font-size: larger;
+}
+
+.red {
+    color: cornsilk;
+    background-color: rgb(255, 17, 0);
+    pointer-events: none;
+    font-family: Fb DanaKama;
+    font-size: larger;
+}

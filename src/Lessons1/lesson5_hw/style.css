@@ -1,0 +1,39 @@
+.card {
+    width: 20vw;
+    height: 20vw;
+    border: 5px solid;
+    padding: 5rem;
+    text-align: center;
+}
+
+.main {
+    font-size: 2rem;
+}
+
+.img {
+    width: 10vw;
+    height: auto;
+    float: right;
+}
+
+.more {
+    font-size: 1.2rem;
+}
+
+.footer {
+    float: left;
+    font-size: larger;
+}
+
+.shabbat{
+    background-color: chocolate;
+    color: black;
+}
+
+.newBorn{
+    background-color: aqua;
+}
+
+.default{
+    background-color: cadetblue;
+}

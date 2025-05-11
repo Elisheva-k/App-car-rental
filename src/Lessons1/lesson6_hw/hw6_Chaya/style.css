@@ -1,0 +1,25 @@
+.card{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.wedding{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.barMitzva{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.babyBoy{
+    color: darkblue;
+}
+.babyGirl{
+    color: palevioletred;
+}
+.trip{
+    color:darkorange
+}
+.birthday{
+    color:red
+}
